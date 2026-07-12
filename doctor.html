@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MentCare | Our Doctors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>🌿 MentCare Specialists</h1>
+    <p>Your mental well-being is our top priority.</p>
+  </header>
+
+  <section class="doctor-section">
+    <div class="doctor-card">
+      <img src="https://i.ibb.co/vjvmSPk/doctor1.jpg" alt="Dr. Meera Rao">
+      <h3>Dr. Meera Rao</h3>
+      <p><b>Psychiatrist</b></p>
+      <p>10+ years experience in mental health and behavioral therapy.</p>
+      <button onclick="bookDoctor('Dr. Meera Rao - Psychiatrist')">Book Appointment</button>
+    </div>
+
+    <div class="doctor-card">
+      <img src="https://i.ibb.co/Z8zJ8CW/doctor2.jpg" alt="Dr. Raghav Singh">
+      <h3>Dr. Raghav Singh</h3>
+      <p><b>Counselor</b></p>
+      <p>Helps individuals overcome stress, anxiety, and emotional challenges.</p>
+      <button onclick="bookDoctor('Dr. Raghav Singh - Counselor')">Book Appointment</button>
+    </div>
+
+    <div class="doctor-card">
+      <img src="https://i.ibb.co/hRfV0LS/doctor3.jpg" alt="Dr. Sneha Patel">
+      <h3>Dr. Sneha Patel</h3>
+      <p><b>Therapist</b></p>
+      <p>Specializes in youth therapy, confidence building, and self-growth.</p>
+      <button onclick="bookDoctor('Dr. Sneha Patel - Therapist')">Book Appointment</button>
+    </div>
+
+    <div class="doctor-card">
+      <img src="https://i.ibb.co/2vCFfFM/doctor4.jpg" alt="Dr. Aarav Mehta">
+      <h3>Dr. Aarav Mehta</h3>
+      <p><b>Clinical Psychologist</b></p>
+      <p>Expert in cognitive behavior therapy and family counseling.</p>
+      <button onclick="bookDoctor('Dr. Aarav Mehta - Psychologist')">Book Appointment</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p><a href="appointment.html">Go to Appointment Page</a> | <a href="index.html">Logout</a></p>
+  </footer>
+
+  <script>
+    function bookDoctor(doctorName) {
+      localStorage.setItem("selectedDoctor", doctorName);
+      alert("You selected " + doctorName);
+      window.location.href = "appointment.html";
+    }
+  </script>
+</body>
+</html>
